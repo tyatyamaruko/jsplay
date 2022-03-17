@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            background: rgba(0, 0, 0, .5);
+            transition: all ease-in-out .4s;
+        }
+        
+        .text {
+            text-align: center;
+        }
+    </style>
+    <title>JS PRAC</title>
+</head>
+
+<body>
+    <button id="but" onclick="Modal.show(this)">show</button>
+    <button id="media" onclick="Modal.show(this)">show</button>
+
+    <div class="modal" onclick="Modal.dismiss()">
+        <h2 class="text"></h2>
+    </div>
+
+    <ul class="accordions">
+        <li>
+            <h1 onclick="Accordion.toggle(this)">accordion</h1>
+            <p>
+                accordion menu practice by js <br> sample sample sample sample sample sample sample
+            </p>
+        </li>
+
+        <li>
+            <h1 onclick="Accordion.toggle(this)">accordion</h1>
+            <p>
+                accordion menu practice by js <br> sample sample sample sample sample sample sample
+            </p>
+        </li>
+
+        <li>
+            <h1 onclick="Accordion.toggle(this)">accordion</h1>
+            <p>
+                accordion menu practice by js <br> sample sample sample sample sample sample sample
+            </p>
+        </li>
+    </ul>
+</body>
+
+</html>
